@@ -1,5 +1,5 @@
 import pytest
-from garage import enter_garage
+from garage import enter_garage, exit_garage, get_available_spots, calculate_fee
 
 
 def test_enter_garage_ID_not_valid(car_id, entry_hour):
