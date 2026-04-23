@@ -7,3 +7,9 @@ def test_enter_garage_ID_not_valid(car_id, entry_hour):
 
 def test_enter_garage_ID_is_valid(car_id, entry_hour):
     assert enter_garage("1GKUKHE39AR258855") == 'Valid Car ID'
+
+def test_enter_garage_entry_hour_not_valid(car_id, entry_hour):
+    assert enter_garage(42) == 'Invalid Entry Hour' #The hours in my code is going to be military time
+
+def test_enter_garage_entry_hour_is_valid(car_id, entry_hour):
+    assert enter_garage(16) == 'Valid Entry Hour'
