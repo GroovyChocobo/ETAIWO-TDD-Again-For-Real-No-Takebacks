@@ -26,5 +26,5 @@ def test_calculate_fee_negative_hours():
 
 def test_calculate_fee_invalid_type():
     with pytest.parametrize(TypeError):
-    calculate_fee(two, 5.0)
+    calculate_fee("two", 5.0)
 
