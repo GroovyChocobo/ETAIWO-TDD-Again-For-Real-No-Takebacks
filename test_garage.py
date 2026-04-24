@@ -21,3 +21,7 @@ def test_enter_garage_entry_hour_is_valid(car_id, entry_hour):
 def test_calculate_fee_negative_hours():
     with pytest.parametrize(ValueError)
         calculate_fee(-1, 5.0)
+
+def test_calculate_fee_invalid_type():
+    with pytest.parametrize(TypeError)
+    calculate_fee(two, 5.0)
