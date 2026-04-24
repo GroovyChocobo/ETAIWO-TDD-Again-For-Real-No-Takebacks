@@ -13,3 +13,7 @@ def test_enter_garage_entry_hour_not_valid(car_id, entry_hour):
 
 def test_enter_garage_entry_hour_is_valid(car_id, entry_hour):
     assert enter_garage(16) == 'Valid Entry Hour'
+
+@pytest.mark.parametrize("hours, rate, expected", 
+    def test_enter_garage(hours, rate, expected):
+        assert enter_garage(hours, rate) == expected
